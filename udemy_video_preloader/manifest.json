@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Udemy Video Preloader",
+    "version": "1.0",
+    "description": "Preloads Udemy videos to prevent stopping during playback.",
+    "permissions": [
+      "activeTab",
+      "https://www.udemy.com/*"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://www.udemy.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_icon": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+      }
+    }
+  }
+  
